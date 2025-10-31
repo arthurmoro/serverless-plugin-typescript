@@ -1,6 +1,6 @@
 {
   "name": "serverless-plugin-typescript-withfix",
-  "version": "2.1.6",
+  "version": "2.1.7",
   "license": "MIT",
   "main": "dist/src/index.js",
   "files": [
