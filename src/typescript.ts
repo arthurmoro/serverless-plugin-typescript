@@ -80,7 +80,8 @@ export async function run(fileNames: string[], options: ts.CompilerOptions): Pro
 
   allDiagnostics.forEach(diagnostic => {
     if (!diagnostic.file) {
-      console.log(diagnostic)
+      console.log(diagnostic);
+      return
     }
     const { line, character } = diagnostic.file.getLineAndCharacterOfPosition(diagnostic.start)
     const message = ts.flattenDiagnosticMessageText(diagnostic.messageText, '\n')
